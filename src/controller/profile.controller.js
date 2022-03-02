@@ -1,6 +1,6 @@
 import Validator from 'validatorjs';
 
-export const getUsers = (req, res) => {
+export const getProfiles = (req, res) => {
     // example output
     res.json({
         data: [
@@ -33,9 +33,13 @@ export const addProfile = (req, res) => {
     // Here you have to check the data
     const data = req.body;
 
-    const success = true; // <- replace this
+    const rules = {
+        // Add your rules
+    };
 
-    if (success) {
+    const validation = new Validator(data, rules); // <- replace this
+
+    if (validation.passes()) {
         res.json({
             message: "Success"
         });
