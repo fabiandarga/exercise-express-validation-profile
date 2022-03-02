@@ -1,0 +1,26 @@
+{
+  "name": "user-validation-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabiandarga/exercise-express-valitaion-user.git"
+  },
+  "author": "Fabian Darga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabiandarga/exercise-express-valitaion-user/issues"
+  },
+  "homepage": "https://github.com/fabiandarga/exercise-express-valitaion-user#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "validatorjs": "^3.22.1"
+  }
+}
